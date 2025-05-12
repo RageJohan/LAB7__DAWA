@@ -1,15 +1,15 @@
 // app/config/db.config.js
 export default {
-    HOST: "localhost",
-    USER: "root",
-    PASSWORD: "",
-    DB: "db",
-    PORT: 5432,
+    HOST: process.env.DB_HOST || "dpg-d9h2fqq4456c738cc1o9-a",
+    USER: process.env.DB_USER || "root",
+    PASSWORD: process.env.DB_PASSWORD || "30Jrbtfpv7PJSVqVvhdd0dru07rqjI02",
+    DB: process.env.DB_NAME || "db_3vzp",
+    PORT: process.env.DB_PORT || 5432,
     dialect: "postgres",
     pool: {
         max: 5,
         min: 0,
         acquire: 30000,
-        idle: 10000,
+        idle: 10000
     },
 };
