@@ -8,8 +8,8 @@ export default {
     dialect: "postgres",
     dialectOptions: {
         ssl: {
-            require: true,
-            rejectUnauthorized: false
+            require: true,          // Obliga conexión SSL
+            rejectUnauthorized: false // Necesario para Render
         }
     },
     pool: {
