@@ -4,8 +4,8 @@ export default {
     USER: "root",
     PASSWORD: "",
     DB: "db",
-    PORT: 3306,
-    dialect: "mysql",
+    PORT: 5432,
+    dialect: "postgres",
     pool: {
         max: 5,
         min: 0,
